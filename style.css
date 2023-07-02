@@ -20,6 +20,10 @@ nav{
     box-shadow: 0px 0px 6px 0px #111222;
     height: 70px;
     z-index: 1;
+    
+}
+.menubtn{
+    display: none;
 }
 a{
     text-decoration: none;
@@ -40,6 +44,7 @@ nav li {
     display: flex;
     align-items: center;
     transition: color 0.3s ease-in-out, font-size 0.2s ease-in-out;
+    color: #12232c;
 }
 nav li:hover{
     color: #0089D1;
@@ -52,6 +57,7 @@ nav li:hover{
     font-size: 25px;
     left: -100px;
     font-weight:bold;
+    color: #12232c;
 }
 .logo:hover{
     color: #0089D1;
@@ -67,6 +73,10 @@ section.home{
     justify-content: center;
     align-items: center;
     
+}
+.home{
+    background-image: url(Sources/bg1.jpg);
+    background-size: cover;
 }
 .home div{
     position: relative;
@@ -150,7 +160,7 @@ section.home{
 }
 .container ul{
     position: relative;
-    display: flex;
+    
     justify-content: space-between;
     align-items: center;
     display: inline-block;
@@ -242,13 +252,13 @@ section.home{
 .contact .title{
     position: relative;
     display: flex;
-    font-size: 40px;
+    font-size: 30px;
     justify-content: center;
     align-items: center;
     color: white;
     font-weight:bold ;
     border-bottom: 3px solid white;
-    width: 200px;
+    width: 150px;
     margin-left:auto;
     margin-right:auto;
     padding-bottom: 15px;
@@ -336,6 +346,164 @@ section.home{
     text-align: center;
     bottom: 420px;
 
+}
+@media screen and (max-width :320px){
+    *{
+        max-width: 320px;
+    }
+    nav{
+        display: none;
+        
+    }
+    #first{
+        background-image:url('Sources/bg2.jpg');
+        position: relative;
+    }
+    .menubtn{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        left: -30px;
+        width: 45px;
+        height: 40px;
+        top: -280px;
+        cursor: pointer;
+    }
+    .line1 , .line2 ,.line3{
+        position: relative;
+        background-color: white;
+        width: 100%;
+        height: 5px;
+        border-radius: 20px;
+        margin-bottom: 1px;
+    }
+
+    
+    
+    .home .title{
+        position: relative;
+        display: flex;
+        color: white;
+        font-size: 31px;   
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        left: -4vw;
+        top: -12vh;
+        width: 90vw;
+        text-align: center;
+    }
+    .home .text{
+        position: relative;
+        color: white;
+        font-size: 30px;  
+        font:bold;
+        left: -6vw;
+        top: 50vh;
+        margin: auto;
+        text-align: center;
+        background-color: rgb(21, 20, 20,0.7) ;
+        width: 90vw;
+    }
+    
+    .home .text{
+        font-size: 18px;
+        top: 5vh;
+    }
+    .home .titre{
+        position: relative;
+        
+        
+        margin-right: auto;
+        margin-left: 13%;
+    }
+    .projects .title{
+        font-size: 26px;
+        width: 130px;
+        top: 0vh;
+        padding-bottom: 10px;
+    }
+    .container li{
+        display: inline-block;
+        margin-right: 20px;
+        width: 300px;
+        height: 543px;
+        border-radius: 30px;
+        background-color: white;
+        box-shadow: 0px;
+        
+    }
+    .container li:hover{
+        box-shadow: 0px;
+    }
+    .container{
+        width: 300px;
+        height: 543px;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+    
+    .container li img{
+        height: 280px;
+        width: 300px;
+    }
+    .container li:nth-child(3) img{
+        width: 300px;
+        height: 280px;
+    }
+    .container li:nth-child(2) img{
+        width: 300px;
+        height: 280px;
+        
+    }
+    .container .asso .img{
+        width: 300px;
+        height: 280px;
+    }
+    .contact .container_contact{
+        height: 380px;
+        width: 90%;
+        overflow-x: auto;
+        box-shadow: 0px 0px 0px 0px
+        
+    }
+    .contact .container_contact div{
+        font-size: 22px;
+        left: 7px;
+        top: 70px;
+    }
+    .contact .container_contact div i{
+        font-size: 38px;
+        margin-right: -55px;
+    }
+    .game{
+        width: 98.9vw;
+        height: 100vh;
+    }
+    section{
+        width: 100vw;
+    }
+    
+    .btns li{
+        margin: 2vw;
+        border-radius: 15%;
+        border: #fff 1.7px ridge ;
+        padding: 2vw;
+    }
+    #first{
+        background-image:url('Sources/bg2.jpg');
+        position: relative;
+    }
+    .sidebar{
+        position: relative;
+        background-color: red;
+        top: 10vh;
+    }
+    
+    
 }
 
 
