@@ -22,9 +22,7 @@ nav{
     z-index: 1;
     
 }
-.menubtn{
-    display: none;
-}
+
 a{
     text-decoration: none;
 }
@@ -505,6 +503,165 @@ section.home{
     
     
 }
+@media screen and (min-width: 321px) and (max-width: 425px) {
+    #first{
+        position: relative;
+        background-image: url(Sources/bgbg.jpeg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: grid;
+        
+    }
+    nav{
+        display: none;
+    }
+    section{
+        width: 100vw;
+    }
+    .contact{
+        width:100vw;
+    }
+    .game{
+        width: 100vw;
+    }
+    #first .menubtn{
+        position: relative;
+        width: 15vw;
+        height: 10vh;
+        left: 58vw;
+        top: 2vh;
+        
+    }
+    
+    .menubtn .line1{
+        position: relative;
+        height: 8px;
+        width: 11vw;
+        background-color: white;
+        border-radius: 10px;
+        left: 1vw;
+        top: 2vh;
+
+    }
+    .menubtn .line2{
+        position: relative;
+        height: 8px;
+        width: 11vw;
+        background-color: white;
+        border-radius: 10px;
+        margin-top: 5px;
+        left: 1vw;
+        top: 2vh;
+    }
+    .menubtn .line3{
+        position: relative;
+        height: 8px;
+        width: 11vw;
+        background-color: white;
+        z-index: 5;
+        border-radius: 10px;
+        margin-top: 5px;
+        left: 1vw;
+        top: 2vh;
+    }
+    .sidebar{
+        
+        position: relative;
+        background-color: rgb(16, 15, 15);
+        top: -10vh;
+        
+        right: -22vw;
+        transform: translateX(100%);
+        z-index: 99;
+        height: 100vh;
+        width: 210px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        
+    }
+    .sidebar.sidebar-active {
+        transform: translateX(0); /* Transition the sidebar to its original position */
+      }
+    .sidebar ul{
+        position: relative;
+        display: inline-block;
+        left: -30vw;
+        top: 0vh;
+        list-style-type: none;
+    }
+    .sidebar ul li{
+        position: relative;
+        font-size: 30px;
+        margin-top: 9vh;
+        color: white;
+        left: 10vw;
+        display: flex;
+    }
+    .sidebar ul li:nth-child(4) i{
+        position: relative;
+        left: -0.5vw;
+
+    }
+    .sidebar ul li i{
+        width: 10vw;
+        margin-right: 2vw;
+    }
+    .home .titre{
+        position: absolute;
+        top: 30vh;
+        width: 100vw;
+
+    }
+    .home .title{
+        position: relative;
+        top: -5vh;
+        left: 5vw;
+        width: 90vw;
+        text-align: center;
+        background-color: rgb(11, 11, 11,0.1);
+    }
+    .home .text{
+        font-size: 23px;
+        top: 8vh;
+        background-color: rgb(11, 11, 11,0.2);
+        position: relative;
+        left: 0vw;
+        text-align: center;
+    }
+    .sidebar .logo{
+        font-size: 28px;
+        position: relative;
+        color: white;
+        top: -38vh;
+        left: 20vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sidebar .logo .bg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 17vw;
+        border-radius: 50%;
+        background-color: #678F9F;
+        height: 17vw;
+        font-size: 32px;
+        margin-right: 2vw;
+        
+        border: #fff 1vw solid;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .menubtn{
+        display: none;
+    }
+  }
+
 
 
 

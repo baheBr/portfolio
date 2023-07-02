@@ -91,8 +91,29 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 100);
   
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.querySelector('.menubtn');
+  const sidebar = document.querySelector('.sidebar');
+  const outside = document.getElementById('first');
 
+  btn.addEventListener('click', () => {
+    sidebar.classList.toggle('sidebar-active');
+  });
   
+  
+});
+
+/*const btn = document.getElementById('first');
+const sidebar = document.querySelector('.sidebar');
+if (btn==null && sidebar==null) {
+  console.log('hello')
+}
+
+btn.addEventListener('click', () => {
+  sidebar.style.display = 'flex';
+  console.log('hello')
+});*/
+
 
 
 
