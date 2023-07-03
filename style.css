@@ -176,6 +176,10 @@ section.home{
     transition: box-shadow 0.3s;
     transition-timing-function: ease;
     opacity: 0.7;
+    width: 400px;
+}
+.container li:nth-child(3) .text{
+    text-align: center;
 }
 .container li:hover{
     
@@ -517,6 +521,7 @@ section.home{
     }
     section{
         width: 100vw;
+        
     }
     .contact{
         width:100vw;
@@ -658,6 +663,10 @@ section.home{
         overflow-x: auto;
         overflow-y: hidden;
         height: 90vh;
+        
+    }
+    .projects{
+        z-index: 100;
     }
     
     .container li{
