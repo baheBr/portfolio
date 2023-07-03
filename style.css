@@ -526,10 +526,11 @@ section.home{
     }
     #first .menubtn{
         position: relative;
+
         width: 15vw;
         height: 10vh;
-        left: 58vw;
-        top: 2vh;
+        top: -42vh;
+        left:35vw ;
         
     }
     
@@ -571,7 +572,7 @@ section.home{
         top: -10vh;
         
         right: -22vw;
-        transform: translateX(100%);
+        
         z-index: 99;
         height: 100vh;
         width: 210px;
@@ -581,9 +582,8 @@ section.home{
         transition: transform 0.3s ease;
         
     }
-    .sidebar.sidebar-active {
-        transform: translateX(0); /* Transition the sidebar to its original position */
-      }
+    
+    
     .sidebar ul{
         position: relative;
         display: inline-block;
@@ -652,6 +652,98 @@ section.home{
         margin-right: 2vw;
         
         border: #fff 1vw solid;
+    }
+    .container{
+        width: 90%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: 90vh;
+    }
+    
+    .container li{
+        width: 90%;
+        margin-right: 7vw;
+        height: 95%;
+    }
+    .container li img{
+        width: 81vw;
+        height: 40vh;
+    }
+    .container li .text{
+        position: relative;
+        top: -4vh;
+    }
+    .container li .descr{
+        position: relative;
+        top: -4vh;
+    }
+
+    .container li:nth-child(2) img{
+        width: 81vw;
+        height: 40vh;
+    }
+    .container li:nth-child(3) img{
+        width: 81vw;
+        height: 40vh;
+    }
+    .container li:nth-child(3) .img{
+        width: 81vw;
+        height: 40vh;
+        
+    }
+    .container li:nth-child(3) img{
+        border-bottom:2px solid black;
+    }
+    .container li:nth-child(3) .text{
+        position: relative;
+        top: 2vh;
+        text-align: center;
+    }
+    .container li:nth-child(3) .descr{
+        position: relative;
+        top: 0.5vh;
+    }
+    .contact{
+        width: 100%;
+    }
+    .contact .container_contact{
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        box-shadow: none ;
+        background-color:rgb(122, 123, 123); 
+    }
+    .contact .container_contact:hover{
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        box-shadow: none ;
+        background-color:rgb(122, 123, 123); 
+    }
+    .contact .container_contact .mail{
+        top: 8vh;
+        left: 4vw;
+        width: 96%;
+        font-size: 24px;
+        
+
+    }
+    .contact .container_contact .linkedin{
+        top: 10vh;
+        left: 4vw;
+        width: 95%;
+        font-size: 24px;
+    }
+   
+    .contact .container_contact .github{
+        left: 4vw;
+        top: 12vh;
+        font-size: 24px;
+        width: 95%;
+    }
+    
+    .contact .container_contact i{
+        padding-right: 3vw;
     }
     
 }

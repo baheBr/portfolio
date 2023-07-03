@@ -95,9 +95,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const btn = document.querySelector('.menubtn');
   const sidebar = document.querySelector('.sidebar');
   const outside = document.getElementById('first');
-
+  //sidebar.style.display='none';
   btn.addEventListener('click', () => {
+    //sidebar.style.display='flex';
     sidebar.classList.toggle('sidebar-active');
+    
   });
   
   
