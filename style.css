@@ -22,6 +22,9 @@ nav{
     z-index: 1;
     
 }
+.sidebar{
+    display: none;
+}
 
 a{
     text-decoration: none;
@@ -581,7 +584,7 @@ section.home{
         z-index: 99;
         height: 100vh;
         width: 210px;
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
         transition: transform 0.3s ease;
